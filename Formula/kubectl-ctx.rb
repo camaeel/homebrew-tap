@@ -4,6 +4,8 @@ class KubectlCtx < Formula
   version "0.1.1"
   license "Apache-2.0"
 
+  conflicts_with "kubectx", because: "both install kubectl-ctx and kubectl-ns binaries"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.1/kubectl-ctx-darwin-arm64"
