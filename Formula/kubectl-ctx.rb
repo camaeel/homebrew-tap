@@ -1,24 +1,24 @@
 class KubectlCtx < Formula
   desc "Kubernetes context and namespace switchers using client-go libraries"
   homepage "https://github.com/camaeel/kubectl-ctx"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ctx-darwin-arm64"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ctx-darwin-arm64"
       sha256 ""
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ns-darwin-arm64"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ns-darwin-arm64"
         sha256 ""
       end
     else
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ctx-darwin-amd64"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ctx-darwin-amd64"
       sha256 ""
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ns-darwin-amd64"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ns-darwin-amd64"
         sha256 ""
       end
     end
@@ -26,19 +26,19 @@ class KubectlCtx < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ctx-linux-arm64"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ctx-linux-arm64"
       sha256 ""
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ns-linux-arm64"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ns-linux-arm64"
         sha256 ""
       end
     else
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ctx-linux-amd64"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ctx-linux-amd64"
       sha256 ""
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.4/kubectl-ns-linux-amd64"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.5/kubectl-ns-linux-amd64"
         sha256 ""
       end
     end
