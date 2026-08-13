@@ -1,45 +1,45 @@
 class KubectlCtx < Formula
   desc "Kubernetes context and namespace switchers using client-go libraries"
   homepage "https://github.com/camaeel/kubectl-ctx"
-  version "0.1.11"
+  version "0.1.12"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ctx-darwin-arm64"
-      sha256 "a671c30af05649ddca290e366442d713649f8c201c637b3ec5aeaaa56b3ebc51"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ctx-darwin-arm64"
+      sha256 "bb73241d9432f5bf27111d6d8b844c3764e6fc7de1fd8aeae2b9e3f3628b65b3"
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ns-darwin-arm64"
-        sha256 "59be3abc118f6149e7bb3f65a547112b6b765c258bb34a0ac24b0c940733a5b6"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ns-darwin-arm64"
+        sha256 "964108b70839ed618bb04c545c7efe13a7ce8093255fc07b703436f406494807"
       end
     else
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ctx-darwin-amd64"
-      sha256 "b95f9811d4242484f24575461d39f2b60f102c9f61c4b0397187d8bcde96f931"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ctx-darwin-amd64"
+      sha256 "ceff32ecc804ad3f82dd240db25e3a0a307aded8ce45ba0ad90b114191fc87f1"
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ns-darwin-amd64"
-        sha256 "b469d1554a9e224aa8b7963e398a82dfdd643c21c8cff28b53e010f507471394"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ns-darwin-amd64"
+        sha256 "6844c45dd8bdd039047794b6e1d01bf63dfc7968b39c5c539c0b0111fd66cd9a"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ctx-linux-arm64"
-      sha256 "92831ff1a6794416396b2999d0e8b0405d2c47a1153b808271129762e0b51569"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ctx-linux-arm64"
+      sha256 "c0c3e6df162776455949e603ccfafad328cac3cbc9845c1246cc8407b40bae2c"
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ns-linux-arm64"
-        sha256 "6a62d87f162b629424854478a7bac7e863c8b1b3a6ec46aa5cdb51c51aae76cb"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ns-linux-arm64"
+        sha256 "3cc515638537999b1012ee62cb29a61521baff38b5ac6b02ff41735caf976282"
       end
     else
-      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ctx-linux-amd64"
-      sha256 "f1bd3e2b7324709eb4030c3b0b797df71d87c195e21cbd64ef90eec6be3c0bf7"
+      url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ctx-linux-amd64"
+      sha256 "49fef84d1810e5b782bdfaff1d3eb7791202e570fafd43fc3c7f0d7cc3852e6b"
 
       resource "kubectl-ns" do
-        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.11/kubectl-ns-linux-amd64"
-        sha256 "fd0f345526e4facf3cc67714bd691eb2dc345ab8897e5761e4b22ce8251bd9f3"
+        url "https://github.com/camaeel/kubectl-ctx/releases/download/v0.1.12/kubectl-ns-linux-amd64"
+        sha256 "882d82c8ef987f1b671b83694a21367f5855d21682b983b26795da47ded3c3d0"
       end
     end
   end
