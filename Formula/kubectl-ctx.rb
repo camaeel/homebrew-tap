@@ -1,7 +1,6 @@
 class KubectlCtx < Formula
   desc "Kubernetes context and namespace switchers using client-go libraries"
   homepage "https://github.com/camaeel/kubectl-ctx"
-  version "0.1.12"
   license "Apache-2.0"
 
   on_macos do
